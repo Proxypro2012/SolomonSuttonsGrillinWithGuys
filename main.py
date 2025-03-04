@@ -9,3 +9,6 @@ with r2col2:
   st.header("Grillin with Guys")
 
 
+navbar = st.sidebar.title("Navigation"))
+
+
