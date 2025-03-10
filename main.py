@@ -12,9 +12,6 @@ selected_page = st.sidebar.radio("Navigation", nav_pages)
 with r1col2:
     st.title("Solomon Suttons")
 
-with r2col2:
-    st.header("Grillin with Guys")
-
 # Display content based on the selected page
 if selected_page == "Home":
     st.subheader("Welcome to Solomon Suttons Home!")
