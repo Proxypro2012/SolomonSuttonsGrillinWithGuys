@@ -10,9 +10,10 @@ selected_page = st.sidebar.radio("Navigation", nav_pages)
 
 
 
-Items = [
-    "SkibidiSlicers":0
-    ]
+Items = {
+    "SkibidiSlicers": 0
+}
+
 
 
 
