@@ -8,6 +8,15 @@ r2col1, r2col2, r2col3 = st.columns([1, 2, 0.5])
 nav_pages = ["Home", "My Cart"]
 selected_page = st.sidebar.radio("Navigation", nav_pages)
 
+
+
+Items = [
+    "SkibidiSlicers":0
+]
+
+
+
+
 # Content based on the selected navigation option
 with r1col2:
     st.title("Solomon Suttons")
@@ -19,3 +28,5 @@ if selected_page == "Home":
 elif selected_page == "My Cart":
     st.subheader("Your Cart")
     st.write("Check out the items in your cart here.")
+
+
