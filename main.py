@@ -43,8 +43,8 @@ if selected_page == "Home":
     with r2col2:
         st.subheader("Welcome to Solomon Suttons Home!")
         st.write("Explore our menu and enjoy some delicious dishes.")
-    with r3col2:
-        st.image(Items["SkibidiSlicers"], caption="Skibidi Slicers. Price: $14.99", width=310)
+    with r3col1:
+        st.image(Items["SkibidiSlicers"], caption="Skibidi Slicers. Price: $14.99", width=250)
 elif selected_page == "My Cart":
     st.subheader("Your Cart")
     st.write("Check out the items in your cart here.")
