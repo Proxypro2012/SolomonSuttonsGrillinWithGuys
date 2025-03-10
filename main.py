@@ -15,7 +15,8 @@ if 'cart' not in st.session_state:
 
 def get_price(item):
     prices = {
-        "Skibidi Slicers": 14.99
+        "SkibidiSlicers": 14.99,
+        "Fatty Fries": 6.99
     }
     
     return prices.get(item, 0)  # Default to 0 if not found
@@ -27,7 +28,8 @@ def get_price(item):
 
 
 Items = {
-    'SkibidiSlicers': "slicers.JPG"
+    'SkibidiSlicers': "slicers.JPG",
+    "Fatty Fries": "fries.JPG"
 }
 
 
@@ -47,6 +49,8 @@ if selected_page == "Home":
         st.image("logo.WEBP")
     with r3col1:
         st.image(Items["SkibidiSlicers"], caption="Skibidi Slicers. Price: $14.99", width=250)
+    with r3col2:
+        st.image(Items["Fries"], caption="Fatty Fries. Price: $6.99", width = 250)
 elif selected_page == "My Cart":
     st.subheader("Your Cart")
     st.write("Check out the items in your cart here.")
