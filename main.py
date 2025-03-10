@@ -11,7 +11,7 @@ selected_page = st.sidebar.radio("Navigation", nav_pages)
 
 
 Items = {
-    'SkibidiSlicers': "slicers.jpg"
+    'SkibidiSlicers': "slicers.JPG"
 }
 
 
