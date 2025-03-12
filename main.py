@@ -113,7 +113,7 @@ if st.session_state.cart:
                     msg = MIMEMultipart()
                     msg['From'] = sender_email
                     msg['To'] = recipient
-                    msg['Subject'] = "Your order at shopromanclothing.streamlit.app is arriving soon!"  # Fixed subject
+                    msg['Subject'] = "Your order at solomon-suttons.streamlit.app is arriving soon!"  # Fixed subject
                 
                     # Attach the body with the email
                     msg.attach(MIMEText(body, 'plain'))
@@ -130,7 +130,7 @@ if st.session_state.cart:
                     except Exception as e:
                         st.error(f"Failed to send email: {e}")
                 
-                send_email(recipient_email, "Your order at shopromanclothing.streamlit.app is arriving soon!", cart_body)
+                send_email(recipient_email, "Your order at solomon-suttons.streamlit.app is arriving soon!", cart_body)
         else:
             st.error("Please enter an email address. (example-email@your-domain.com)")
 
