@@ -96,7 +96,7 @@ elif selected_page == "My Cart":
 
     # Checkout button should only appear when cart is not empty
 if st.session_state.cart:
-    if selected_page == "My Cart"
+    if selected_page == "My Cart":
         recipient_email = st.text_input("Enter email to verify order:")
         if recipient_email:  # When email is entered
             if st.button("Checkout"):  # Checkout button appears after entering email
