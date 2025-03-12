@@ -20,7 +20,8 @@ if 'cart' not in st.session_state:
 def get_price(item):
     prices = {
         "SkibidiSlicers": 14.99,
-        "Fatty Fries": 6.99
+        "Fatty Fries": 6.99,
+        "Skibidi Cake": 8.99
     }
     
     return prices.get(item, 0)  # Default to 0 if not found
@@ -33,7 +34,8 @@ def get_price(item):
 
 Items = {
     'SkibidiSlicers': "slicers.JPG",
-    "Fatty Fries": "fries.JPG"
+    "Fatty Fries": "fries.JPG",
+    "Skibidi Cake:" "skibidi_cake.JPEG"
 }
 
 
@@ -57,11 +59,25 @@ if selected_page == "Home":
     with r4col1:
         if st.button("Add to Cart", key="ATCPT1"):
             st.session_state.cart.append("SkibidiSlicers")
+
+    
     with r3col2:
         st.image(Items["Fatty Fries"], caption="Fatty Fries. Price: $6.99", width = 200)
     with r4col2:
         if st.button("Add to Cart", key="ATCPT2"):
                     st.session_state.cart.append("Fatty Fries")
+            
+    with r3col2:
+        st.image(Items["Skibidi Cake"], caption="Skibidi Cake. Price: $8.99", width = 200)
+    with r4col2:
+        if st.button("Add to Cart", key="ATCPT3"):
+                    st.session_state.cart.append("Skibidi Cake")
+
+
+
+
+
+
 elif selected_page == "My Cart":
         st.subheader("Your Cart")
         st.write("Check out the items in your cart here.")
