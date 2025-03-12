@@ -67,9 +67,9 @@ if selected_page == "Home":
         if st.button("Add to Cart", key="ATCPT2"):
                     st.session_state.cart.append("Fatty Fries")
             
-    with r3col2:
+    with r3col3:
         st.image(Items["Skibidi Cake"], caption="Skibidi Cake. Price: $8.99", width = 200)
-    with r4col2:
+    with r4col3:
         if st.button("Add to Cart", key="ATCPT3"):
                     st.session_state.cart.append("Skibidi Cake")
 
