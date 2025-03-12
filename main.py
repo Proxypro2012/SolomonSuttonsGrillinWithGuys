@@ -35,7 +35,7 @@ def get_price(item):
 Items = {
     'SkibidiSlicers': "slicers.JPG",
     "Fatty Fries": "fries.JPG",
-    "Skibidi Cake": "skibidi_cake.JPG"
+    "Skibidi Cake": "skibidi_cake.JPEG"
 }
 
 
