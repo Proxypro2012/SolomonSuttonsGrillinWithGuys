@@ -85,7 +85,7 @@ elif selected_page == "My Cart":
                     unique_key = f"remove_{item}_{st.session_state.cart.index(item)}_{hash(item)}"
                     
                     # Remove from cart button with a unique key for each item
-                    if st.button(f"Pone {item} ex canistra", key=unique_key):
+                    if st.button(f"Remove {item} from Cart", key=unique_key):
                         st.session_state.cart.remove(item)
                         
                 # Add the item to the cart content list for email
@@ -96,6 +96,7 @@ elif selected_page == "My Cart":
 
     # Checkout button should only appear when cart is not empty
 if st.session_state.cart:
+    if selected_page == "My Cart"
         recipient_email = st.text_input("Enter email to verify order:")
         if recipient_email:  # When email is entered
             if st.button("Checkout"):  # Checkout button appears after entering email
