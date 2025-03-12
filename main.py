@@ -54,8 +54,14 @@ if selected_page == "Home":
     
     with r3col1:
         st.image(Items["SkibidiSlicers"], caption="Skibidi Slicers. Price: $14.99", width=250)
+    with r4col1:
+        if st.button("Add to Cart", key="ATCPT1"):
+            st.session_state.cart.append("SkibidiSlicers")
     with r3col2:
         st.image(Items["Fatty Fries"], caption="Fatty Fries. Price: $6.99", width = 200)
+    with r4col2:
+        if st.button("Add to Cart", key="ATCPT1"):
+                    st.session_state.cart.append("Fatty Fries")
 elif selected_page == "My Cart":
         st.subheader("Your Cart")
         st.write("Check out the items in your cart here.")
